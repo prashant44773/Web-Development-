@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX Model in CSS</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+            margin : 0;
+            padding : 0;
+        }
+
+        body{
+            background-color: aqua;
+        }
+
+
+        .container
+        {
+            background-color: rgb(12, 221, 64);
+            border: 3px solid rgb(226, 20, 20);
+            /* padding: 50px; 
+             padding-left: 200px;
+            padding-right: 250px;
+            padding-top: 70px;
+            padding-bottom: 225px; 
+             we can set padding like this in one line top , bottom , left and right 
+             padding: 50px 45px 33px 20px; 
+             padding: top/bottom  left/right;  */
+            padding :50px 70px;
+            margin: 50px  35px; 
+            border-radius: 25px;
+            width: 700px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container"> 
+        <h3>This is My Heading</h3> 
+        <p id="first">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi expedita eveniet, dolorem, suscipit dolore consectetur similique pariatur officiis ratione nesciunt magni atque dicta fugit quia alias tempore soluta, aut nam. Sunt, facere eaque.
+        </p>
+    </div>
+    <div class="container"> 
+        <h3>This is My Heading</h3> 
+        <p id="second">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi expedita eveniet, dolorem, suscipit dolore consectetur similique pariatur officiis ratione nesciunt magni atque dicta fugit quia alias tempore soluta, aut nam. Sunt, facere eaque.
+        </p>
+    </div>
+    <div class="container"> 
+        <h3>This is My Heading</h3> 
+        <p id="third">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus animi expedita eveniet, dolorem, suscipit dolore consectetur similique pariatur officiis ratione nesciunt magni atque dicta fugit quia alias tempore soluta, aut nam. Sunt, facere eaque.
+        </p>
+    </div>
+    
+</body>
+</html>

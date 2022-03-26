@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lonewolf's Fitness</title>
+
+    <link rel="stylesheet" href="CSS/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- font -->
+
+    <style>
+        body {
+            font-family: 'Neonderthaw', cursive;
+            /* font */
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("CSS/IMG/background.jpg");
+            height: 900px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 4px solid white; */
+            position: absolute;
+            top: 40px;
+            left: 45px;
+        }
+
+        .left img {
+            width: 120px;
+            filter: invert(100%);
+            margin: 15px 21px;
+            padding: 5px;
+        }
+
+        .left div {
+            text-align: center;
+            color: #13eaaa;
+            font-size: 25px;
+        }
+
+        .mid {
+            /* position: absolute; */
+            display: block;
+            width: 40%;
+            margin: 40px auto;
+            /* border: 4px solid white; */
+            font-size: 20px;
+            top: 20px;
+        }
+
+        .right {
+            position: absolute;
+            display: inline-block;
+            /* border: 4px solid white; */
+            right: 30px;
+            top: 40px;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+        }
+
+        .navbar li a {
+            /* color: #09beec; */
+            color: white;
+            padding: 34px 25px;
+            text-decoration: none;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(6, 240, 6);
+        }
+
+        .btn {
+            margin: 0px 10px;
+            background-color: #0d43db;
+            color: #f1ee08;
+            padding: 6px 15px;
+            border: 5px solid rgb(207 217 208);
+            border-radius: 17px;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Neonderthaw', cursive;
+            /* font */
+        }
+
+        .btn:hover {
+            background-color: cornsilk;
+        }
+
+        .container {
+            border: 6px solid rgb(7, 245, 7);
+            margin: 160px 144px;
+            padding: 75px 75px;
+            width: 35%;
+            border-radius: 2px;
+            background-color: black;
+            border-radius: 35px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            padding: 8px;
+            margin: 12px auto;
+            width: 411px;
+            border: 4px solid black;
+            font-size: 25px;
+            border-radius: 30px;
+            font-family: 'Neonderthaw', cursive;
+        }
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            display: block;
+            margin: 30px auto;
+            width: 41%;
+            border-radius: 32px;
+            padding: 13px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- for the left logo -->
+        <div class="left">
+            <img src="CSS/IMG/logo.webp" alt="">
+            <div>
+                Wolf's Fitness
+            </div>
+        </div>
+
+        <!-- for the navBar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- for the box buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button> <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the Best Gym in the City</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Address">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Contact No.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Email">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
